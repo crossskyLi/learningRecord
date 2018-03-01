@@ -1,14 +1,8 @@
-<<<<<<< HEAD
+﻿
 ﻿#JavaScript 中的私有变量
-
-=======
-﻿JavaScript 中的私有变量
-=
->>>>>>> f90c4ae9e6b8119c846e5cef4ca79b0a7be0e656
 原文地址：Private Variables in JavaScript
 原文作者：Marcus Noble
 译文出自：掘金翻译计划
-
 JavaScript 中的私有变量
 最近 JavaScript 有了很多改进，新的语法和功能一直在被增加进来。但有些东西并没有改变，一切仍然是对象，几乎所有东西都可以在运行时被改变，并且没有公共、私有属性的概念。但是我们自己可以用一些技巧来改变这种情况，在这篇文章中，我介绍各种可以实现私有变量的方式。
 
