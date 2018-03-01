@@ -1,4 +1,4 @@
-﻿JavaScript 中的私有变量
+﻿#JavaScript 中的私有变量
 
 原文地址：Private Variables in JavaScript
 原文作者：Marcus Noble
