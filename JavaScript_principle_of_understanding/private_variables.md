@@ -1,5 +1,6 @@
 ﻿
 ﻿#JavaScript 中的私有变量
+=
 原文地址：Private Variables in JavaScript
 原文作者：Marcus Noble
 译文出自：掘金翻译计划
@@ -14,7 +15,7 @@ JavaScript 中的私有变量
 命名约定
 
 第一个也是最成熟的方法是使用特定的命名约定来表示属性应该被视为私有。通常以下划线作为属性名称的前缀（例如 _count ）。这并没有真正阻止变量被访问或修改，而是依赖于开发者之间的相互理解，认为这个变量应该被视为限制访问。
-
+```javascript
 class Shape {
   constructor(width, height) {
     this._width = width;
@@ -28,6 +29,7 @@ class Shape {
 const square = new Shape(10, 10);
 console.log(square.area);    // 100
 console.log(square._width);  // 10
+```
 WeakMap
 
 想要稍有一些限制性，您可以使用 WeakMap 来存储所有私有值。这仍然不会阻止对数据的访问，但它将私有值与用户可操作的对象分开。对于这种技术，我们将 WeakMap 的关键字设置为私有属性所属对象的实例，并且我们使用一个函数（我们称之为 internal ）来创建或返回一个对象，所有的属性将被存储在其中。这种技术的好处是在遍历属性时或者在执行 JSON.stringify 时不会展示出实例的私有属性，但它依赖于一个放在类外面的可以访问和操作的 WeakMap 变量。
