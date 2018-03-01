@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 ﻿#JavaScript 中的私有变量
 
+=======
+﻿JavaScript 中的私有变量
+=
+>>>>>>> f90c4ae9e6b8119c846e5cef4ca79b0a7be0e656
 原文地址：Private Variables in JavaScript
 原文作者：Marcus Noble
 译文出自：掘金翻译计划
