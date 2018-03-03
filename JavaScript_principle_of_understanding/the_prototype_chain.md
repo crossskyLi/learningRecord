@@ -10,4 +10,4 @@
     
 <img src = '../image/prototype_chain.jpg' >
 
-    函数的原型对象constructor 默认指向函数本身,原型对象除了有原型属性外,为了实现继承,还有原型链指针__proto__,该指针执行上一层的原型对象,而上一层的原型对象的结构依然类似,这样利用__proto__ 一直指向Object的原型对象上,而Object的原型对象用Object.prototype.__proto__ = null表示原型链的最顶端,如此变性成了javascript的原型链继承,同时也解释了为什么所有的javascript对象都具有Object的基本方法。
+    函数的原型对象constructor 默认指向函数本身,原型对象除了有原型属性外,为了实现继承,还有原型链指针__proto__,该指针执行上一层的原型对象,而上一层的原型对象的结构依然类似,这样利用__proto__ 一直指向Object的原型对象上,而Object的原型对象用Object.prototype.__proto__ = null表示原型链的最顶端,如此变性成了javascript的原型链继承,同时也解释了为什么所有的javascript对象都具有Object的基本方法。Object的原型对象并不是null，应该是Function.prototype（Object本身是一个构造函数），Object.prototype的原型是null。
